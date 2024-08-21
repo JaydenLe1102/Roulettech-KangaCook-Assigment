@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 import os
 
 # Create your models here.
@@ -29,8 +30,14 @@ class Recipe(models.Model):
 			if self.image and not self.image.name.startswith(f'images/{self.id}'):
 				print("Original image name:")
 				print(self.image.name)
+				old_image_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
 				ext = os.path.splitext(self.image.name)[1]  # Get the original extension
 				self.image.name = f'images/{self.id}{ext}'  # Set the new image name
+				new_image_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
+
+				# Rename the file on disk
+				if os.path.exists(old_image_path):
+						os.rename(old_image_path, new_image_path)
 
 				# Save again with the updated image name
 				kwargs['force_insert'] = False  # Ensure it's not trying to insert a new record

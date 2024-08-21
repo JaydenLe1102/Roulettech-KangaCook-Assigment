@@ -1,8 +1,7 @@
 [
 	{
-		 "id":"0",
 		 "title":"Strawberry Smoothie",
-		 "imageUrl":"../../assets/images/recipes/strawberry-smoothie.png",
+		 "imageUrl":"./media/images/strawberry-smoothie.png",
 		 "keywords":[
 				"strawberry",
 				"milk",
@@ -33,9 +32,8 @@
 		 "calories":120
 	},
 	{
-		 "id":"1",
 		 "title":"Blueberry Strawberry Oatmeal",
-		 "imageUrl":"../../assets/images/recipes/strawberry-oatmeal.png",
+		 "imageUrl":"./media/images/strawberry-oatmeal.png",
 		 "keywords":[
 				"strawberry",
 				"oats",
@@ -69,9 +67,8 @@
 		 "calories":220
 	},
 	{
-		 "id":"2",
 		 "title":"Salmon Salad",
-		 "imageUrl":"../../assets/images/recipes/salmon-salad.png",
+		 "imageUrl":"./media/images/salmon-salad.png",
 		 "keywords":[
 				"salmon",
 				"mixed greens",
@@ -112,9 +109,8 @@
 		 "calories":300
 	},
 	{
-		 "id":"3",
 		 "title":"Tofu Stir-fry",
-		 "imageUrl":"../../assets/images/recipes/tofu-stir-fry.png",
+		 "imageUrl":"./media/images/tofu-stir-fry.png",
 		 "keywords":[
 				"tofu",
 				"carrot",
@@ -155,9 +151,8 @@
 		 "calories":250
 	},
 	{
-		 "id":"4",
 		 "title":"Chicken and Rice",
-		 "imageUrl":"../../assets/images/recipes/chicken-rice.png",
+		 "imageUrl":"./media/images/chicken-rice.png",
 		 "keywords":[
 				"chicken",
 				"rice",
@@ -192,9 +187,8 @@
 		 "calories":350
 	},
 	{
-		 "id":"5",
 		 "title":"Honey Yogurt Parfait",
-		 "imageUrl":"../../assets/images/recipes/honey-yogurt-parfait.png",
+		 "imageUrl":"./media/images/honey-yogurt-parfait.png",
 		 "keywords":[
 				"yogurt",
 				"honey",
@@ -230,9 +224,8 @@
 		 "calories":200
 	},
 	{
-		 "id":"6",
 		 "title":"Green Detox Smoothie",
-		 "imageUrl":"../../assets/images/recipes/green-detox-smoothie.png",
+		 "imageUrl":"./media/images/green-detox-smoothie.png",
 		 "keywords":[
 				"spinach",
 				"banana",
@@ -265,9 +258,8 @@
 		 "calories":150
 	},
 	{
-		 "id":"7",
 		 "title":"Salmon Poke Bowl",
-		 "imageUrl":"../../assets/images/recipes/salmon-poke-bowl.png",
+		 "imageUrl":"./media/images/salmon-poke-bowl.png",
 		 "keywords":[
 				"salmon",
 				"rice",
@@ -309,9 +301,8 @@
 		 "calories":350
 	},
 	{
-		 "id":"8",
 		 "title":"Beef Burger",
-		 "imageUrl":"../../assets/images/recipes/beef-burger.png",
+		 "imageUrl":"./media/images/beef-burger.png",
 		 "keywords":[
 				"beef",
 				"lettuce",
@@ -349,9 +340,8 @@
 		 "calories":450
 	},
 	{
-		 "id":"9",
 		 "title":"Chicken Salad with Honey Dressing",
-		 "imageUrl":"../../assets/images/recipes/chicken-salad.png",
+		 "imageUrl":"./media/images/chicken-salad.png",
 		 "keywords":[
 				"chicken",
 				"lettuce",
@@ -389,9 +379,8 @@
 		 "calories":300
 	},
 	{
-		 "id":"10",
 		 "title":"Chicken Alfredo",
-		 "imageUrl":"../../assets/images/recipes/chicken-alfredo.png",
+		 "imageUrl":"./media/images/chicken-alfredo.png",
 		 "keywords":[
 				"chicken",
 				"spinach",
@@ -434,9 +423,8 @@
 		 "calories":500
 	},
 	{
-		 "id":"11",
 		 "title":"Chicken Tacos",
-		 "imageUrl":"../../assets/images/recipes/chicken-tacos.png",
+		 "imageUrl":"./media/images/chicken-tacos.png",
 		 "keywords":[
 				"chicken",
 				"lettuce",
@@ -475,9 +463,8 @@
 		 "calories":350
 	},
 	{
-		 "id":"12",
 		 "title":"Veggie Stir-Fry",
-		 "imageUrl":"../../assets/images/recipes/allergen-free-veggie.png",
+		 "imageUrl":"./media/images/allergen-free-veggie.png",
 		 "keywords":[
 				"carrot",
 				"tofu",
@@ -518,9 +505,8 @@
 		 "calories":250
 	},
 	{
-		 "id":"13",
 		 "title":"Gluten-Free Chicken Lettuce Wraps",
-		 "imageUrl":"../../assets/images/recipes/chicken-lettuce-wrap.png",
+		 "imageUrl":"./media/images/chicken-lettuce-wrap.png",
 		 "keywords":[
 				"chicken",
 				"lettuce",
@@ -564,9 +550,8 @@
 		 "calories":300
 	},
 	{
-		 "id":"14",
 		 "title":"Quick Chia Seed Pudding",
-		 "imageUrl":"../../assets/images/recipes/strawberry-pudding.png",
+		 "imageUrl":"./media/images/strawberry-pudding.png",
 		 "keywords":[
 				"chia",
 				"almond milk",
