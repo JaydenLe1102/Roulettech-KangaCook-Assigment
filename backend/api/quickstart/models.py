@@ -1,0 +1,43 @@
+from django.db import models
+import os
+
+# Create your models here.
+
+class Recipe(models.Model):
+		title = models.CharField(max_length=255)
+		image = models.ImageField(upload_to='images/', blank=True, null=True)
+		keywords = models.CharField(max_length=255, blank=True)
+		types = models.CharField(max_length=255, blank=True)
+		description = models.TextField(blank=True)
+		time = models.IntegerField(help_text="Time in minutes")
+		servings = models.IntegerField()
+		ingredients = models.TextField(help_text="List of ingredients")
+		instructions = models.TextField(help_text="Cooking instructions")
+		calories = models.IntegerField()
+
+		def __str__(self):
+				return self.title
+			
+			
+
+		def save(self, *args, **kwargs):
+			# Save the object first to generate an ID if it doesn't exist
+			if not self.id:
+					super().save(*args, **kwargs)
+
+			# Set the image name based on the instance ID
+			if self.image and not self.image.name.startswith(f'images/{self.id}'):
+				print("Original image name:")
+				print(self.image.name)
+				ext = os.path.splitext(self.image.name)[1]  # Get the original extension
+				self.image.name = f'images/{self.id}{ext}'  # Set the new image name
+
+				# Save again with the updated image name
+				kwargs['force_insert'] = False  # Ensure it's not trying to insert a new record
+				kwargs['force_update'] = True   # Force the update of the existing record
+				super().save(*args, **kwargs)
+
+        
+      
+      
+      

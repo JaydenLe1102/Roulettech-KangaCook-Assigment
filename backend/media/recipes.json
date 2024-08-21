@@ -1,0 +1,603 @@
+[
+	{
+		 "id":"0",
+		 "title":"Strawberry Smoothie",
+		 "imageUrl":"../../assets/images/recipes/strawberry-smoothie.png",
+		 "keywords":[
+				"strawberry",
+				"milk",
+				"yogurt",
+				"honey",
+				"american"
+		 ],
+		 "types":[
+				"breakfast",
+				"beverage",
+				"low-calorie",
+				"drink"
+		 ],
+		 "description":"A refreshing and healthy strawberry smoothie made with fresh strawberries, milk, yogurt, and a touch of honey.",
+		 "time":5,
+		 "servings":"2",
+		 "ingredients":[
+				"1 cup fresh strawberries",
+				"1/2 cup milk",
+				"1/2 cup yogurt",
+				"1 tbsp honey"
+		 ],
+		 "instructions":[
+				"1. Add all ingredients to a blender.",
+				"2. Blend until smooth.",
+				"3. Serve immediately."
+		 ],
+		 "calories":120
+	},
+	{
+		 "id":"1",
+		 "title":"Blueberry Strawberry Oatmeal",
+		 "imageUrl":"../../assets/images/recipes/strawberry-oatmeal.png",
+		 "keywords":[
+				"strawberry",
+				"oats",
+				"blueberry",
+				"banana",
+				"honey",
+				"american"
+		 ],
+		 "types":[
+				"breakfast",
+				"whole grain"
+		 ],
+		 "description":"A hearty and nutritious oatmeal made with oats, fresh bananas, and a drizzle of honey for sweetness.",
+		 "time":15,
+		 "servings":"2",
+		 "ingredients":[
+				"1 cup rolled oats",
+				"2 cups water",
+				"1/2 cup fresh blueberries",
+				"1/2 cup sliced strawberries",
+				"1 ripe banana, mashed",
+				"2 tbsp honey"
+		 ],
+		 "instructions":[
+				"1. In a saucepan, bring water to a boil.",
+				"2. Add oats and reduce heat to low.",
+				"3. Cook, stirring occasionally, until oats are tender.",
+				"4. Stir in mashed banana and honey.",
+				"5. Serve topped with fresh blueberries and strawberries."
+		 ],
+		 "calories":220
+	},
+	{
+		 "id":"2",
+		 "title":"Salmon Salad",
+		 "imageUrl":"../../assets/images/recipes/salmon-salad.png",
+		 "keywords":[
+				"salmon",
+				"mixed greens",
+				"carrot",
+				"lettuce",
+				"tomato",
+				"american"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"seafood",
+				"low-calorie"
+		 ],
+		 "description":"A light and refreshing salad with fresh salmon, mixed greens, and a variety of vegetables like carrots, lettuce, and tomatoes.",
+		 "time":20,
+		 "servings":"2",
+		 "ingredients":[
+				"8 oz salmon fillet",
+				"4 cups mixed greens",
+				"1 carrot, shredded",
+				"1/2 cup cherry tomatoes, halved",
+				"1/4 cup sliced cucumber",
+				"2 tbsp olive oil",
+				"1 tbsp lemon juice",
+				"Salt and pepper to taste"
+		 ],
+		 "instructions":[
+				"1. Preheat the oven to 400°F (200°C).",
+				"2. Season the salmon fillet with salt and pepper.",
+				"3. Place the salmon on a baking sheet and bake for 12-15 minutes, or until cooked through.",
+				"4. In a large bowl, toss the mixed greens, shredded carrot, cherry tomatoes, and sliced cucumber.",
+				"5. In a small bowl, whisk together the olive oil, lemon juice, salt, and pepper to make the dressing.",
+				"6. Flake the cooked salmon and add it to the salad.",
+				"7. Drizzle the dressing over the salad and toss to combine.",
+				"8. Serve immediately."
+		 ],
+		 "calories":300
+	},
+	{
+		 "id":"3",
+		 "title":"Tofu Stir-fry",
+		 "imageUrl":"../../assets/images/recipes/tofu-stir-fry.png",
+		 "keywords":[
+				"tofu",
+				"carrot",
+				"edamame",
+				"soy sauce",
+				"asian"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"protein",
+				"vegan"
+		 ],
+		 "description":"A flavorful and healthy tofu stir-fry with fresh vegetables like carrots, edamame, and a soy-based sauce.",
+		 "time":25,
+		 "servings":"3",
+		 "ingredients":[
+				"1 block tofu, pressed and cubed",
+				"1 cup edamame",
+				"1 carrot, sliced",
+				"1 bell pepper, sliced",
+				"1/2 cup sliced mushrooms",
+				"3 tbsp soy sauce",
+				"1 tbsp sesame oil",
+				"1 tsp minced ginger",
+				"2 cloves garlic, minced",
+				"2 green onions, chopped",
+				"Cooked rice, for serving"
+		 ],
+		 "instructions":[
+				"1. Heat sesame oil in a large skillet over medium heat.",
+				"2. Add minced ginger and garlic, and cook for 1-2 minutes until fragrant.",
+				"3. Add cubed tofu to the skillet and cook until golden brown on all sides.",
+				"4. Add sliced carrots, bell pepper, and mushrooms to the skillet and cook until vegetables are tender.",
+				"5. Stir in edamame and soy sauce, and cook for an additional 2-3 minutes.",
+				"6. Garnish with chopped green onions and serve hot over cooked rice."
+		 ],
+		 "calories":250
+	},
+	{
+		 "id":"4",
+		 "title":"Chicken and Rice",
+		 "imageUrl":"../../assets/images/recipes/chicken-rice.png",
+		 "keywords":[
+				"chicken",
+				"rice",
+				"vegetable",
+				"american"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"protein"
+		 ],
+		 "description":"A simple and delicious dish with tender chicken served over a bed of white rice and accompanied by a side of fresh vegetables.",
+		 "time":30,
+		 "servings":"4",
+		 "ingredients":[
+				"4 boneless, skinless chicken breasts",
+				"2 cups white rice",
+				"4 cups chicken broth",
+				"2 cups mixed vegetables (carrots, peas, corn)",
+				"Salt and pepper to taste"
+		 ],
+		 "instructions":[
+				"1. Season chicken breasts with salt and pepper.",
+				"2. In a large skillet, heat some oil over medium heat.",
+				"3. Add chicken breasts to the skillet and cook until golden brown on both sides, about 6-8 minutes per side.",
+				"4. In a separate pot, bring chicken broth to a boil.",
+				"5. Add rice to the boiling chicken broth and stir well. Reduce heat to low, cover, and simmer for 18-20 minutes, or until rice is cooked through and liquid is absorbed.",
+				"6. In the same skillet used for the chicken, add mixed vegetables and cook until tender.",
+				"7. Serve chicken over cooked rice with a side of mixed vegetables.",
+				"8. Enjoy your delicious chicken and rice meal!"
+		 ],
+		 "calories":350
+	},
+	{
+		 "id":"5",
+		 "title":"Honey Yogurt Parfait",
+		 "imageUrl":"../../assets/images/recipes/honey-yogurt-parfait.png",
+		 "keywords":[
+				"yogurt",
+				"honey",
+				"strawberry",
+				"banana",
+				"blueberry",
+				"oats",
+				"american"
+		 ],
+		 "types":[
+				"breakfast",
+				"dessert"
+		 ],
+		 "description":"A delightful parfait with layers of creamy yogurt, a drizzle of honey, and fresh strawberries or bananas.",
+		 "time":10,
+		 "servings":"2",
+		 "ingredients":[
+				"1 cup Greek yogurt",
+				"2 tbsp honey",
+				"1/2 cup fresh strawberries, sliced",
+				"1/2 cup fresh blueberries",
+				"1 banana, sliced",
+				"1/4 cup oats"
+		 ],
+		 "instructions":[
+				"1. In a glass or jar, layer Greek yogurt, honey, and sliced strawberries.",
+				"2. Add another layer of Greek yogurt, honey, and sliced bananas.",
+				"3. Top with fresh blueberries and oats.",
+				"4. Repeat the layers until the glass or jar is filled.",
+				"5. Serve immediately or refrigerate for later.",
+				"6. Enjoy your delicious honey yogurt parfait!"
+		 ],
+		 "calories":200
+	},
+	{
+		 "id":"6",
+		 "title":"Green Detox Smoothie",
+		 "imageUrl":"../../assets/images/recipes/green-detox-smoothie.png",
+		 "keywords":[
+				"spinach",
+				"banana",
+				"almond milk",
+				"honey",
+				"american"
+		 ],
+		 "types":[
+				"breakfast",
+				"beverage",
+				"vegan",
+				"detox",
+				"healthy"
+		 ],
+		 "description":"A nutrient-packed smoothie with fresh spinach, banana, almond milk, and a touch of honey for sweetness.",
+		 "time":5,
+		 "servings":"1",
+		 "ingredients":[
+				"1 cup fresh spinach",
+				"1 ripe banana",
+				"1 cup almond milk",
+				"1 tbsp honey"
+		 ],
+		 "instructions":[
+				"1. Place fresh spinach, ripe banana, almond milk, and honey in a blender.",
+				"2. Blend until smooth and creamy.",
+				"3. Pour into a glass and serve immediately.",
+				"4. Enjoy your refreshing green detox smoothie!"
+		 ],
+		 "calories":150
+	},
+	{
+		 "id":"7",
+		 "title":"Salmon Poke Bowl",
+		 "imageUrl":"../../assets/images/recipes/salmon-poke-bowl.png",
+		 "keywords":[
+				"salmon",
+				"rice",
+				"avocado",
+				"tomato",
+				"edamame",
+				"spinach",
+				"soy sauce",
+				"hawaiian"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"seafood",
+				"protein",
+				"healthy"
+		 ],
+		 "description":"A delicious poke bowl featuring fresh salmon, rice, avocado, edamame, and a light soy-based dressing.",
+		 "time":20,
+		 "servings":"2",
+		 "ingredients":[
+				"8 oz fresh salmon, cubed",
+				"2 cups cooked rice",
+				"1 avocado, sliced",
+				"1 cup cherry tomatoes, halved",
+				"1/2 cup edamame, cooked",
+				"2 cups fresh spinach",
+				"2 tbsp soy sauce",
+				"1 tsp sesame oil",
+				"1 tbsp sesame seeds",
+				"1 green onion, chopped"
+		 ],
+		 "instructions":[
+				"1. In a bowl, combine cubed salmon with soy sauce, sesame oil, sesame seeds, and chopped green onion. Marinate for 10 minutes.",
+				"2. Assemble bowls with cooked rice, fresh spinach, marinated salmon, sliced avocado, cherry tomatoes, and cooked edamame.",
+				"3. Drizzle bowls with any remaining marinade.",
+				"4. Serve immediately and enjoy your delicious salmon poke bowls!"
+		 ],
+		 "calories":350
+	},
+	{
+		 "id":"8",
+		 "title":"Beef Burger",
+		 "imageUrl":"../../assets/images/recipes/beef-burger.png",
+		 "keywords":[
+				"beef",
+				"lettuce",
+				"tomato",
+				"bread",
+				"american"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"main course"
+		 ],
+		 "description":"A classic beef burger with fresh lettuce, tomato, and a side of crispy fries.",
+		 "time":20,
+		 "servings":"4",
+		 "ingredients":[
+				"1 lb ground beef",
+				"4 hamburger buns",
+				"4 lettuce leaves",
+				"4 tomato slices",
+				"4 slices of cheese (optional)",
+				"Salt and pepper to taste",
+				"4 tbsp mayonnaise",
+				"4 tbsp ketchup",
+				"4 tbsp mustard"
+		 ],
+		 "instructions":[
+				"1. Divide ground beef into 4 equal portions and form into patties.",
+				"2. Season patties with salt and pepper.",
+				"3. Cook patties on a grill or skillet over medium-high heat for 4-5 minutes per side, or until desired doneness.",
+				"4. Toast hamburger buns on the grill or skillet.",
+				"5. Assemble burgers with cooked patties, lettuce, tomato, cheese (if using), mayonnaise, ketchup, and mustard.",
+				"6. Serve immediately with crispy fries and enjoy your delicious beef burger!"
+		 ],
+		 "calories":450
+	},
+	{
+		 "id":"9",
+		 "title":"Chicken Salad with Honey Dressing",
+		 "imageUrl":"../../assets/images/recipes/chicken-salad.png",
+		 "keywords":[
+				"chicken",
+				"lettuce",
+				"tomato",
+				"honey",
+				"american"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"protein",
+				"low-calorie",
+				"healthy"
+		 ],
+		 "description":"A delicious chicken salad with fresh lettuce, tomatoes, and a sweet honey dressing.",
+		 "time":15,
+		 "servings":"2",
+		 "ingredients":[
+				"2 cups cooked chicken, shredded or diced",
+				"4 cups mixed salad greens",
+				"1 cup cherry tomatoes, halved",
+				"1/4 cup sliced almonds",
+				"1/4 cup dried cranberries",
+				"2 tbsp honey",
+				"2 tbsp apple cider vinegar",
+				"2 tbsp olive oil",
+				"Salt and pepper to taste"
+		 ],
+		 "instructions":[
+				"1. In a large bowl, combine cooked chicken, mixed salad greens, cherry tomatoes, sliced almonds, and dried cranberries.",
+				"2. In a small bowl, whisk together honey, apple cider vinegar, olive oil, salt, and pepper to make the dressing.",
+				"3. Pour dressing over salad and toss to combine.",
+				"4. Serve immediately and enjoy your flavorful chicken salad with honey dressing!"
+		 ],
+		 "calories":300
+	},
+	{
+		 "id":"10",
+		 "title":"Chicken Alfredo",
+		 "imageUrl":"../../assets/images/recipes/chicken-alfredo.png",
+		 "keywords":[
+				"chicken",
+				"spinach",
+				"carrot",
+				"fettuccine",
+				"parsley",
+				"italian"
+		 ],
+		 "types":[
+				"dinner",
+				"main course",
+				"hearty",
+				"creamy"
+		 ],
+		 "description":"A creamy Alfredo pasta dish with tender chicken, fresh spinach, and carrots, served over fettuccine and garnished with fresh parsley.",
+		 "time":30,
+		 "servings":"4",
+		 "ingredients":[
+				"8 oz fettuccine pasta",
+				"2 chicken breasts, diced",
+				"2 cups fresh spinach",
+				"1 carrot, julienned",
+				"2 cloves garlic, minced",
+				"1 cup heavy cream",
+				"1/2 cup grated Parmesan cheese",
+				"2 tbsp butter",
+				"Salt and pepper to taste",
+				"Fresh parsley for garnish"
+		 ],
+		 "instructions":[
+				"1. Cook fettuccine pasta according to package instructions.",
+				"2. In a large skillet, melt butter over medium heat. Add diced chicken and cook until browned and cooked through.",
+				"3. Add minced garlic to the skillet and cook until fragrant.",
+				"4. Stir in fresh spinach and julienned carrots until spinach wilts.",
+				"5. Pour in heavy cream and grated Parmesan cheese. Bring to a simmer and cook until sauce thickens.",
+				"6. Season with salt and pepper to taste.",
+				"7. Serve Alfredo sauce over cooked fettuccine pasta.",
+				"8. Garnish with fresh parsley and enjoy your creamy chicken and vegetable Alfredo!"
+		 ],
+		 "calories":500
+	},
+	{
+		 "id":"11",
+		 "title":"Chicken Tacos",
+		 "imageUrl":"../../assets/images/recipes/chicken-tacos.png",
+		 "keywords":[
+				"chicken",
+				"lettuce",
+				"tomato",
+				"cheese",
+				"tortilla",
+				"mexican"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"main course"
+		 ],
+		 "description":"Delicious and flavorful chicken tacos with tender chicken, fresh lettuce, tomatoes, and a sprinkle of cheese, served in warm tortillas.",
+		 "time":30,
+		 "servings":"4",
+		 "ingredients":[
+				"1 lb chicken breast, cooked and shredded",
+				"8 small tortillas",
+				"2 cups shredded lettuce",
+				"1 cup diced tomatoes",
+				"1 cup shredded cheese",
+				"1/4 cup chopped cilantro",
+				"1/4 cup diced onion",
+				"1 lime, cut into wedges",
+				"Salt and pepper to taste",
+				"Your favorite salsa for serving"
+		 ],
+		 "instructions":[
+				"1. Warm tortillas in a skillet or microwave.",
+				"2. Assemble tacos with shredded chicken, lettuce, tomatoes, cheese, cilantro, and onion.",
+				"3. Squeeze lime juice over tacos and season with salt and pepper.",
+				"4. Serve with your favorite salsa on the side.",
+				"5. Enjoy your delicious chicken tacos!"
+		 ],
+		 "calories":350
+	},
+	{
+		 "id":"12",
+		 "title":"Veggie Stir-Fry",
+		 "imageUrl":"../../assets/images/recipes/allergen-free-veggie.png",
+		 "keywords":[
+				"carrot",
+				"tofu",
+				"allergen-free sauce",
+				"asian"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"main course",
+				"vegan"
+		 ],
+		 "description":"A colorful and nutritious stir-fry made with fresh vegetables like carrots, and tofu, seasoned with a light, allergen-free sauce.",
+		 "time":25,
+		 "servings":"3",
+		 "ingredients":[
+				"2 cups mixed vegetables (carrots, bell peppers, broccoli)",
+				"1 block tofu, cubed",
+				"2 cloves garlic, minced",
+				"2 tbsp soy sauce",
+				"1 tbsp sesame oil",
+				"1 tbsp rice vinegar",
+				"1 tsp honey",
+				"1 tsp cornstarch",
+				"Salt and pepper to taste",
+				"Cooked rice for serving"
+		 ],
+		 "instructions":[
+				"1. In a small bowl, whisk together soy sauce, sesame oil, rice vinegar, honey, and cornstarch to make the sauce.",
+				"2. Heat a large skillet or wok over medium-high heat. Add tofu cubes and cook until golden brown on all sides.",
+				"3. Add minced garlic to the skillet and cook until fragrant.",
+				"4. Add mixed vegetables to the skillet and stir-fry until tender-crisp.",
+				"5. Pour sauce over tofu and vegetables. Stir to coat evenly.",
+				"6. Season with salt and pepper to taste.",
+				"7. Serve stir-fry over cooked rice.",
+				"8. Enjoy your colorful and nutritious veggie stir-fry!"
+		 ],
+		 "calories":250
+	},
+	{
+		 "id":"13",
+		 "title":"Gluten-Free Chicken Lettuce Wraps",
+		 "imageUrl":"../../assets/images/recipes/chicken-lettuce-wrap.png",
+		 "keywords":[
+				"chicken",
+				"lettuce",
+				"gluten-free sauce",
+				"asian"
+		 ],
+		 "types":[
+				"lunch",
+				"dinner",
+				"main course"
+		 ],
+		 "description":"Delicious and healthy chicken lettuce wraps with tender chicken, fresh lettuce, and a gluten-free sauce, perfect for a light meal.",
+		 "time":20,
+		 "servings":"2",
+		 "ingredients":[
+				"1 lb ground chicken",
+				"1 head iceberg lettuce",
+				"1/2 cup shredded carrots",
+				"1/2 cup chopped water chestnuts",
+				"2 cloves garlic, minced",
+				"2 tbsp gluten-free soy sauce",
+				"1 tbsp rice vinegar",
+				"1 tbsp honey",
+				"1 tsp sesame oil",
+				"1 tsp cornstarch",
+				"1 green onion, thinly sliced",
+				"Salt and pepper to taste"
+		 ],
+		 "instructions":[
+				"1. Separate lettuce leaves, wash, and pat dry. Set aside.",
+				"2. In a small bowl, whisk together soy sauce, rice vinegar, honey, sesame oil, and cornstarch to make the sauce.",
+				"3. Heat a large skillet over medium heat. Add ground chicken and cook until browned and cooked through.",
+				"4. Add minced garlic to the skillet and cook until fragrant.",
+				"5. Stir in shredded carrots and water chestnuts.",
+				"6. Pour sauce over chicken mixture and stir to coat evenly. Cook until sauce thickens.",
+				"7. Season with salt and pepper to taste.",
+				"8. Spoon chicken mixture onto lettuce leaves.",
+				"9. Garnish with sliced green onions.",
+				"10. Roll up lettuce leaves and enjoy your gluten-free chicken lettuce wraps!"
+		 ],
+		 "calories":300
+	},
+	{
+		 "id":"14",
+		 "title":"Quick Chia Seed Pudding",
+		 "imageUrl":"../../assets/images/recipes/strawberry-pudding.png",
+		 "keywords":[
+				"chia",
+				"almond milk",
+				"honey",
+				"strawberry",
+				"american"
+		 ],
+		 "types":[
+				"dessert",
+				"breakfast",
+				"healthy"
+		 ],
+		 "description":"A quick and easy chia seed pudding made with almond milk and honey, topped with fresh strawberries for a healthy and delicious treat.",
+		 "time":5,
+		 "servings":"2",
+		 "ingredients":[
+				"1/4 cup chia seeds",
+				"1 cup almond milk",
+				"1 tbsp honey (or maple syrup)",
+				"1/2 cup sliced strawberries",
+				"Additional honey or sweetener to taste (optional)"
+		 ],
+		 "instructions":[
+				"1. In a mixing bowl, combine chia seeds, almond milk, and honey.",
+				"2. Whisk together until well combined.",
+				"3. Let the mixture sit for 5 minutes, then whisk again to prevent clumps.",
+				"4. Cover the bowl and refrigerate for at least 2 hours or overnight, until the pudding thickens.",
+				"5. Once chilled and thickened, stir the pudding and divide it into serving cups or bowls.",
+				"6. Top with sliced strawberries and drizzle with additional honey or sweetener if desired.",
+				"7. Serve chilled and enjoy your quick and healthy chia seed pudding!"
+		 ],
+		 "calories":150
+	}
+]
