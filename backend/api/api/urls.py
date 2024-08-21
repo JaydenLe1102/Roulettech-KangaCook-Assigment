@@ -36,14 +36,12 @@ router.register(r'recipes', views.RecipeViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('hello/', views.HelloWorldView.as_view(), name='hello-world')
+    path('api/', include(router.urls)),
+    path('api/search/', views.SearchRecipeView.as_view(), name='search-recipe'),
+    path('', views.WelcomeView.as_view(), name='hello-world')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-#urlpatterns = [
-#    path('recipes/', RecipeViewSet.as_view(), name='recipe-list-create'),
-#]
+
 
 
