@@ -7,13 +7,13 @@ import os
 class Recipe(models.Model):
 		title = models.CharField(max_length=255)
 		image = models.ImageField(upload_to='images/', blank=True, null=True)
-		keywords = models.CharField(max_length=255, blank=True)
-		types = models.CharField(max_length=255, blank=True)
+		keywords = models.JSONField(default=list, blank=True)
+		types = models.JSONField(default=list, blank=True)
 		description = models.TextField(blank=True)
 		time = models.IntegerField(help_text="Time in minutes")
 		servings = models.IntegerField()
-		ingredients = models.TextField(help_text="List of ingredients")
-		instructions = models.TextField(help_text="Cooking instructions")
+		ingredients = models.JSONField(default=list, blank=True)
+		instructions = models.JSONField(default=list, blank=True)
 		calories = models.IntegerField()
 
 		def __str__(self):

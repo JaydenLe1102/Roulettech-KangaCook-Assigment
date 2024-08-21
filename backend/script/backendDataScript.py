@@ -15,13 +15,13 @@ for recipe in recipes:
     # Prepare the data and files
     data = {
         'title': recipe['title'],
-        'keywords': recipe['keywords'],
-        'types': recipe['types'],
+        'keywords': json.dumps(recipe['keywords']),
+        'types': json.dumps(recipe['types']),
         'description': recipe['description'],
         'time': recipe['time'],
         'servings': recipe['servings'],
-        'ingredients': recipe['ingredients'],
-        'instructions': recipe['instructions'],
+        'ingredients': json.dumps(recipe['ingredients']),
+        'instructions': json.dumps(recipe['instructions']),
         'calories': recipe['calories'],
     }
 
