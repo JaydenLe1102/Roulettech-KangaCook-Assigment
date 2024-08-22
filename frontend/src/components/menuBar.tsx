@@ -13,9 +13,13 @@ const StyledButton = styled(Button)<ButtonLinkProps>({
   marginLeft: '20px',
 });
 
+const StyledAppBar = styled(AppBar)({
+  zIndex: 1300, // Ensure it's above other elements
+});
+
 function MenuBar() {
   return (
-    <AppBar position="static">
+    <StyledAppBar position="static">
       <Toolbar>
         <Typography variant="h6">
           Fridge Fusion
@@ -27,7 +31,7 @@ function MenuBar() {
           Add Recipe
         </StyledButton>
       </Toolbar>
-    </AppBar>
+    </StyledAppBar>
   );
 }
 
