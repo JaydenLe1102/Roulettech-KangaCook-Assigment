@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import getRecipes from "../apis/recipes/recipes.get";
 
+import Recipe from "../components/Recipes/Recipe";
 import SearchBar from "../components/Recipes/SearchBar";
 
 import { GlobalProvider } from "../utils/useContext";
@@ -43,6 +44,7 @@ function Recipes() {
 					<li key={recipe.id}>{recipe.title}</li>
 				))}
 			</ul>
+			<Recipe />
 		</GlobalProvider>
 	)
 	
