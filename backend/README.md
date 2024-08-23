@@ -96,7 +96,7 @@ python3 backendDataScript.py
 | GET |  http://localhost:8000/ | Welcome Endpoint, contain single welcome text |
 | GET | http://localhost:8000/api/recipes | Return all recipes in the database |
 | POST | http://localhost:8000/api/recipes | Send post request to this endpoint with data to create new recipes |
-| GET | http://localhost:8000/api/search/?query='{search query}'| Search available recipes in with a search query text | 
+| GET | http://localhost:8000/api/search/?query='{query}'| Search available recipes in with a search query text | 
 
 
 
