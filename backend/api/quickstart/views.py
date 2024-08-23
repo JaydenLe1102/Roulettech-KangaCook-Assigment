@@ -32,10 +32,7 @@ class SearchRecipeView(APIView):
 					title = recipe.title.lower()
 					keywords = ' '.join(recipe.keywords).lower()
 					ingredients = ' '.join(recipe.ingredients).lower()
-     
-					print(recipe.image)
-			
-					# Check if any query term is in title, keywords, or ingredients
+
 					if all(query in title or query in keywords or query in ingredients for query in queries):
 							filtered_recipes.append(recipe)
        

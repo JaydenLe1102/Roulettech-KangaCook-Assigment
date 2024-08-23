@@ -22,26 +22,22 @@ class Recipe(models.Model):
 			
 
 		def save(self, *args, **kwargs):
-			# Save the object first to generate an ID if it doesn't exist
 			if not self.id:
 					super().save(*args, **kwargs)
 
-			# Set the image name based on the instance ID
 			if self.image and not self.image.name.startswith(f'images/{self.id}'):
 				print("Original image name:")
 				print(self.image.name)
 				old_image_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
-				ext = os.path.splitext(self.image.name)[1]  # Get the original extension
-				self.image.name = f'images/{self.id}{ext}'  # Set the new image name
+				ext = os.path.splitext(self.image.name)[1]  
+				self.image.name = f'images/{self.id}{ext}'
 				new_image_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
 
-				# Rename the file on disk
 				if os.path.exists(old_image_path):
 						os.rename(old_image_path, new_image_path)
 
-				# Save again with the updated image name
-				kwargs['force_insert'] = False  # Ensure it's not trying to insert a new record
-				kwargs['force_update'] = True   # Force the update of the existing record
+				kwargs['force_insert'] = False 
+				kwargs['force_update'] = True   
 				super().save(*args, **kwargs)
 
         
