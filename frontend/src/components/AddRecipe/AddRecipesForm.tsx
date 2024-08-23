@@ -3,7 +3,6 @@ import { TextField, Button, Grid, Box, Typography } from '@mui/material';
 import Recipe, { RecipeResponse } from '../../types/Recipe.interface';
 import addRecipe from '../../apis/add_recipe.post';
 
-
 interface RecipeForm {
 	title: string;
 	image: File | undefined;
@@ -44,7 +43,6 @@ function RecipeForm() {
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     
-		// Split the keywords and types into arrays
 		const keywords = recipe.keywords.split(',').map((keyword) => keyword.trim());
 		const types = recipe.types.split(',').map((type) => type.trim());
 		const ingredients = recipe.ingredients.split('\n').map((ingredient) => ingredient.trim());
@@ -86,15 +84,15 @@ function RecipeForm() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Title"
-              name="title"
+              label='Title'
+              name='title'
               value={recipe.title}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
-					<Grid item xs={12} container alignItems="center">
+					<Grid item xs={12} container alignItems='center'>
 						<Box
 							sx={{
 								p: 1,
@@ -112,35 +110,25 @@ function RecipeForm() {
 							{recipe.imageName ? (
 								<Typography>{recipe.imageName}</Typography>
 							) : (
-								<Typography variant="body2" color="textSecondary">
+								<Typography variant='body2' color='textSecondary'>
 									Please upload your recipe image
 								</Typography>
 							)}
 						</Box>
 						<input
-								accept="image/*"
+								accept='image/*'
 								style={{ display: 'none' }}
-								id="upload-file"
-								type="file"
+								id='upload-file'
+								type='file'
 								onChange={handleFileChange}
 							/>
-						<label htmlFor="upload-file">
+						<label htmlFor='upload-file'>
 							<Button 
-							variant="contained" 
-							component="span"
-							sx={{
-								fontSize: {
-									xs: '0.60rem', 
-									sm: '0.70rem',
-									md: '0.90rem',
-								},
-								padding: {
-									xs: '6px 12px',
-									sm: '8px 16px',
-									md: '10px 20px',
-								},
-							}}>
-								Upload Image
+							variant='contained' 
+							component='span'
+              size='large'
+							>
+								UPLOAD
 							</Button>
 						</label>
 
@@ -148,33 +136,33 @@ function RecipeForm() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Keywords (Please separate each keyword with a comma)"
-              name="keywords"
+              label='Keywords (Please separate each keyword with a comma)'
+              name='keywords'
               value={recipe.keywords}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Types (Please separate each type with a comma)"
-              name="types"
+              label='Types (Please separate each type with a comma)'
+              name='types'
               value={recipe.types}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Description"
-              name="description"
+              label='Description'
+              name='description'
               value={recipe.description}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               multiline
               rows={4}
               required
@@ -183,35 +171,35 @@ function RecipeForm() {
           <Grid item xs={6}>
             <TextField
               fullWidth
-              label="Time (minutes)"
-              name="time"
-              type="number"
+              label='Time (minutes)'
+              name='time'
+              type='number'
               value={recipe.time != 0 ? recipe.time : ''}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
           <Grid item xs={6}>
             <TextField
               fullWidth
-              label="Servings"
-              name="servings"
-              type="number"
+              label='Servings'
+              name='servings'
+              type='number'
               value={recipe.servings != 0 ? recipe.servings : ''}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Ingredients (Please put each ingredient on one line)"
-              name="ingredients"
+              label='Ingredients (Please put each ingredient on one line)'
+              name='ingredients'
               value={recipe.ingredients}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               multiline
               rows={6}
               required
@@ -220,11 +208,11 @@ function RecipeForm() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Instructions (Please put each steps on one line)"
-              name="instructions"
+              label='Instructions (Please put each steps on one line)'
+              name='instructions'
               value={recipe.instructions}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               multiline
               rows={6}
               required
@@ -233,17 +221,17 @@ function RecipeForm() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              label="Calories"
-              name="calories"
-              type="number"
+              label='Calories'
+              name='calories'
+              type='number'
               value={recipe.calories != 0 ? recipe.calories : ''}
               onChange={handleChange}
-              variant="outlined"
+              variant='outlined'
               required
             />
           </Grid>
           <Grid item xs={12}>
-            <Button type="submit" variant="contained" color="primary" fullWidth>
+            <Button type='submit' variant='contained' color='primary' fullWidth>
               Create Recipe
             </Button>
           </Grid>

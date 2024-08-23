@@ -1,5 +1,5 @@
-import Recipe from "../components/Recipes/Recipe";
-import SearchBar from "../components/Recipes/SearchBar";
+import Recipe from '../components/Recipes/Recipe';
+import SearchBar from '../components/Recipes/SearchBar';
 
 
 function Recipes() {
