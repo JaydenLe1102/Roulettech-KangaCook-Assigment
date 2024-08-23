@@ -1,6 +1,7 @@
 
 
-
+import { Typography } from "@mui/material";
+import AddRecipeForm from "../components/AddRecipe/AddRecipesForm";
 
 
 function AddRecipe() {
@@ -9,7 +10,10 @@ function AddRecipe() {
 	
 	return (
 		<>
-			<h1>AddRecipe</h1>
+      <Typography variant="h3" component="h1" gutterBottom>
+        Create a New Recipe
+      </Typography>
+			<AddRecipeForm />
 		</>
 	)
 	
