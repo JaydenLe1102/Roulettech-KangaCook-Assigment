@@ -8,6 +8,8 @@ type GlobalContextType = {
 	setSearchQuery: (query: string) => void;
 	recipes: RecipeResponse[];
 	setRecipes: (recipes: RecipeResponse[]) => void;
+  savedRecipes: RecipeResponse[];
+  setSavedRecipes: (savedRecipes: RecipeResponse[]) => void;
 }
 
 

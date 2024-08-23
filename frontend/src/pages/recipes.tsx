@@ -3,20 +3,23 @@ import { useState, useEffect } from "react";
 import getRecipes from "../apis/recipes/recipes.get";
 
 import Recipe from "../components/Recipes/Recipe";
-import SearchBar from "../components/Recipes/SearchBar";
+import SearchBar from "../components/Recipes/searchBar";
 
 import { GlobalProvider } from "../utils/useContext";
 import { RecipeResponse } from "../types/Recipe.interface";
+import { Typography } from "@mui/material";
 
 
 function Recipes() {
 	
 	const [searchQuery, setSearchQuery] = useState<string>('');
 	const [recipes, setRecipes] = useState<RecipeResponse[] >([]);
+	const [savedRecipes, setSavedRecipes] = useState<RecipeResponse[] >([]);
 	
 	const useContextState = {
 		searchQuery, setSearchQuery,
-		recipes, setRecipes
+		recipes, setRecipes,
+		savedRecipes, setSavedRecipes
 	}
 	
 	useEffect(() => {
@@ -36,14 +39,10 @@ function Recipes() {
 	
 	return (
 		<GlobalProvider value= {useContextState}>
-			<h1>Recipes</h1>
+			<Typography variant='h4' component='h1' gutterBottom sx={{marginTop: '100px'}}>
+        Recipes
+      </Typography>
 			<SearchBar />
-			
-			<ul>
-				{recipes.map((recipe) => (
-					<li key={recipe.id}>{recipe.title}</li>
-				))}
-			</ul>
 			<Recipe />
 		</GlobalProvider>
 	)

@@ -39,6 +39,7 @@ const SearchBar = () => {
 			display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center',
+			paddingY: '20px'
 		}}
 	>
 		<Paper
