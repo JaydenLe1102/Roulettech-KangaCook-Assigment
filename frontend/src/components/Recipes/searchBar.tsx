@@ -10,39 +10,54 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import { Box } from '@mui/material';
 import { useGlobal } from "../../utils/useContext";
+import searchRecipes from "../../apis/search/search.get";
+import { RecipeResponse } from "../../types/Recipe.interface";
 
 const SearchBar = () => {
 	
-	const { searchQuery, setSearchQuery } = useGlobal();
+	const { searchQuery, setSearchQuery, setRecipes} = useGlobal();
 	
-	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		setSearchQuery(e.target.value);
-		console.log(e.target.value);
+	const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+		
+		const newSearchQuery = e.target.value;
+		
+		setSearchQuery(newSearchQuery);
+		
+		
+
 	}
 	
-	return (
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		
+		const recipes: RecipeResponse[] =  await searchRecipes(searchQuery);
+		
+		setRecipes(recipes);
+	};
 	
+	return (
 	<Box
-	sx={{
-		display: 'flex',
-		justifyContent: 'center',
-		alignItems: 'center',
-	}}
->
-	<Paper
-		component="form"
-		sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: '50%' }}
+		sx={{
+			display: 'flex',
+			justifyContent: 'center',
+			alignItems: 'center',
+		}}
 	>
-		<InputBase
-			sx={{ ml: 1, flex: 1 }}
-			placeholder="Search"
-			value={searchQuery}
-			onInput={handleInputChange}
-		/>
-		<IconButton type="button" sx={{ p: '10px' }} aria-label="search">
-			<SearchIcon />
-		</IconButton>
-	</Paper>
+		<Paper
+			component='form'
+			onSubmit={handleSubmit} 
+			sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: '50%' }}
+		>
+			<InputBase
+				sx={{ ml: 1, flex: 1 }}
+				placeholder='Search'
+				value={searchQuery}
+				onInput={handleInputChange}
+			/>
+			<IconButton type="submit" sx={{ p: '10px' }} aria-label='search'>
+				<SearchIcon />
+			</IconButton>
+		</Paper>
 </Box>
 	)
 };

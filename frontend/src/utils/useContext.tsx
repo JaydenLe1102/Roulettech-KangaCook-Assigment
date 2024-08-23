@@ -1,13 +1,13 @@
 import React, { createContext, ReactNode } from 'react';
-import Recipe from '../types/Recipe.interface';
+import { RecipeResponse } from '../types/Recipe.interface';
 
 
 
 type GlobalContextType = {
 	searchQuery: string;
 	setSearchQuery: (query: string) => void;
-	recipes: Recipe[];
-	setRecipes: (recipes: Recipe[]) => void;
+	recipes: RecipeResponse[];
+	setRecipes: (recipes: RecipeResponse[]) => void;
 }
 
 

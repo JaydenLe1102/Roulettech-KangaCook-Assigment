@@ -1,5 +1,3 @@
-
-
 import {RecipeResponse} from "../../types/Recipe.interface";
 import axios from 'axios';
 
@@ -8,16 +6,13 @@ import { config } from "../../config";
 
 const BACKEND_URL = config.BACKEND_URL;
 
-
-
-
-const getRecipes = async () : Promise<RecipeResponse[]> => {
+const searchRecipes = async (searchQuery: string) : Promise<RecipeResponse[]> => {
 	
-	const response = await axios.get(`${BACKEND_URL}/recipes`);
+	const response = await axios.get(`${BACKEND_URL}/search?query=${searchQuery}`);
 	console.log(response.data);
 	
 	return response.data;
 };
 
 
-export default getRecipes;
+export default searchRecipes;
