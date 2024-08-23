@@ -1,7 +1,7 @@
 import React, {FormEventHandler, useState } from 'react';
 import { TextField, Button, Grid, Box, Typography } from '@mui/material';
 import Recipe, { RecipeResponse } from '../../types/Recipe.interface';
-import addRecipe from '../../apis/add_recipe.post';
+import addRecipe from '../../apis/recipes/recipes.post';
 
 
 interface RecipeForm {

@@ -1,7 +1,7 @@
-import Recipe, {RecipeResponse} from "../types/Recipe.interface";
+import Recipe, {RecipeResponse} from "../../types/Recipe.interface";
 import axios from 'axios';
 
-import { config } from "../config";
+import { config } from "../../config";
 
 
 const BACKEND_URL = config.BACKEND_URL;

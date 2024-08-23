@@ -9,8 +9,19 @@ import SearchIcon from "@mui/icons-material/Search";
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import { Box } from '@mui/material';
+import { useGlobal } from "../../utils/useContext";
 
-const SearchBar = () => (
+const SearchBar = () => {
+	
+	const { searchQuery, setSearchQuery } = useGlobal();
+	
+	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		setSearchQuery(e.target.value);
+		console.log(e.target.value);
+	}
+	
+	return (
+	
 	<Box
 	sx={{
 		display: 'flex',
@@ -25,18 +36,16 @@ const SearchBar = () => (
 		<InputBase
 			sx={{ ml: 1, flex: 1 }}
 			placeholder="Search"
-			onInput={(e) => {
-				const target = e.target as HTMLInputElement;
-				console.log(target.value);
-			}}
+			value={searchQuery}
+			onInput={handleInputChange}
 		/>
 		<IconButton type="button" sx={{ p: '10px' }} aria-label="search">
 			<SearchIcon />
 		</IconButton>
 	</Paper>
 </Box>
-	
-);
+	)
+};
 
 
 export default SearchBar;
