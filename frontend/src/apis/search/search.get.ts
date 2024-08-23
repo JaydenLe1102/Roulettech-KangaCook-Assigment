@@ -9,7 +9,6 @@ const BACKEND_URL = config.BACKEND_URL;
 const searchRecipes = async (searchQuery: string) : Promise<RecipeResponse[]> => {
 	
 	const response = await axios.get(`${BACKEND_URL}/search?query=${searchQuery}`);
-	console.log(response.data);
 	
 	return response.data;
 };

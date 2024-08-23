@@ -51,13 +51,10 @@ async function addRecipe(recipe: Recipe): Promise<RecipeResponse | null> {
 					calories: response.data.calories,
 			};
 			
-			console.log(responseRecipe);
 			
 			return responseRecipe
 			
-	} catch (error) {
-			console.error('Error uploading recipe:', error);
-			
+	} catch {
 			return null;
 	}
 }

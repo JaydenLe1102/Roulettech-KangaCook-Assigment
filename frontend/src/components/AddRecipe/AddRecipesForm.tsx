@@ -2,6 +2,7 @@ import React, {FormEventHandler, useState } from 'react';
 import { TextField, Button, Grid, Box, Typography } from '@mui/material';
 import Recipe, { RecipeResponse } from '../../types/Recipe.interface';
 import addRecipe from '../../apis/recipes/recipes.post';
+import Swal from 'sweetalert2';
 
 interface RecipeForm {
 	title: string;
@@ -61,11 +62,40 @@ function RecipeForm() {
 			types,
 		};
 		
-		console.log('Recipe Object:', recipe_obj);
 		
 		const recipeResponse: RecipeResponse | null= await addRecipe(recipe_obj);
-		
-    console.log('Submitted Recipe:', recipeResponse);
+    
+    if (!recipeResponse) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Submission Failed',
+        text: 'Failed to create recipe',
+        confirmButtonColor: '#1769aa',
+      });
+    }
+    else{
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Recipe created successfully',
+        confirmButtonColor: '#1769aa',
+      });
+    }
+    
+    // Clear the form
+    setRecipe({
+      title: '',
+      image: undefined ,
+      imageName: '',
+      keywords: '',
+      types: '',
+      description: '',
+      time: 0,
+      servings: 0,
+      ingredients: '',
+      instructions: '',
+      calories: 0,
+    });
   };
 	
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
