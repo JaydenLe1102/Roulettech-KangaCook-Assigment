@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import getRecipes from "../apis/recipes/recipes.get";
 
 import Recipe from "../components/Recipes/Recipes";
-import SearchBar from "../components/Recipes/SearchBar";
+import SearchBar from "../components/Recipes/Search";
 
 import { GlobalProvider } from "../utils/useContext";
 import { RecipeResponse } from "../types/Recipe.interface";

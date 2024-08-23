@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Recipes from './pages/RecipesPage'
 import AddRecipe from './pages/AddRecipePage'
-import MenuBar from './components/MenuBar'
+import MenuBar from './components/Menu'
 
 import './App.css'
 
