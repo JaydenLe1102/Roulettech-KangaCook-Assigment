@@ -24,18 +24,23 @@ class SearchRecipeView(APIView):
 			queries_str = request.query_params.get('query')
 			queries = queries_str.lower().split(' ')
 			recipes = Recipe.objects.all()
+   
+			
+   
 			filtered_recipes = []
 			for recipe in recipes:
 					title = recipe.title.lower()
 					keywords = ' '.join(recipe.keywords).lower()
 					ingredients = ' '.join(recipe.ingredients).lower()
+     
+					print(recipe.image)
 			
 					# Check if any query term is in title, keywords, or ingredients
 					if all(query in title or query in keywords or query in ingredients for query in queries):
 							filtered_recipes.append(recipe)
        
 
-			serializer = RecipeSerializer(filtered_recipes, many=True)
+			serializer = RecipeSerializer(filtered_recipes, many=True, context={'request': request})
 			return Response(serializer.data)
 		except Exception as e:
 			return Response({'error': str(e)})
