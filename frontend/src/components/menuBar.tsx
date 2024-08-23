@@ -129,8 +129,8 @@ function MenuBar() {
     justifyContent: 'center',
     alignItems: 'center',
   }}>
-          {pages.map((page) => (
-            <StyledButton component={Link} to={pagesDirect[pages.indexOf(page)]}>
+          {pages.map((page, index) => (
+            <StyledButton key={index} component={Link} to={pagesDirect[index]}>
               {page}
             </StyledButton>
           ))}

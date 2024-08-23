@@ -1,9 +1,9 @@
 //import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import Recipes from './pages/Recipes'
+import Recipes from './pages/recipes'
 import AddRecipe from './pages/AddRecipe'
-import MenuBar from './components/MenuBar'
+import MenuBar from './components/menuBar'
 
 import './App.css'
 
