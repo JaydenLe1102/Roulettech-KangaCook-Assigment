@@ -1,21 +1,39 @@
-import React, { useState } from 'react';
-import { TextField, Button, Grid, Box } from '@mui/material';
+import React, {FormEventHandler, useState } from 'react';
+import { TextField, Button, Grid, Box, Typography } from '@mui/material';
+import Recipe, { RecipeResponse } from '../../types/Recipe.interface';
+import addRecipe from '../../apis/add_recipe.post';
+
+
+interface RecipeForm {
+	title: string;
+	image: File | undefined;
+	imageName: string;
+	keywords: string;
+	types: string;
+	description: string;
+	time: number;
+	servings: number;
+	ingredients: string;
+	instructions: string;
+	calories: number;
+}
 
 function RecipeForm() {
-  const [recipe, setRecipe] = useState({
+  const [recipe, setRecipe]= useState<RecipeForm>({
     title: '',
-    image: null,
+    image: undefined ,
+		imageName: '',
     keywords: '',
     types: '',
     description: '',
-    time: '',
-    servings: '',
+    time: 0,
+    servings: 0,
     ingredients: '',
     instructions: '',
-    calories: '',
+    calories: 0,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setRecipe((prevRecipe) => ({
       ...prevRecipe,
@@ -23,31 +41,46 @@ function RecipeForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    // Process form submission logic, e.g., sending the data to a server
-    console.log('Submitted Recipe:', recipe);
+    
+		// Split the keywords and types into arrays
+		const keywords = recipe.keywords.split(',').map((keyword) => keyword.trim());
+		const types = recipe.types.split(',').map((type) => type.trim());
+		const ingredients = recipe.ingredients.split('\n').map((ingredient) => ingredient.trim());
+		const instructions = recipe.instructions.split('\n').map((instruction) => instruction.trim());
+		
+		const recipe_obj : Recipe = {
+			title: recipe.title,
+			image: recipe.image,
+			description: recipe.description,
+			time: recipe.time,
+			servings: recipe.servings,
+			calories: recipe.calories,
+			instructions,
+			ingredients,
+			keywords,
+			types,
+		};
+		
+		console.log('Recipe Object:', recipe_obj);
+		
+		const recipeResponse: RecipeResponse | null= await addRecipe(recipe_obj);
+		
+    console.log('Submitted Recipe:', recipeResponse);
   };
 	
-	const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    const reader = new FileReader();
-
-    reader.onloadend = () => {
-      setRecipe((prevRecipe) => ({
-        ...prevRecipe,
-        image: file,
-        imageUrl: reader.result,
-      }));
-    };
-
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target!.files![0]!;
+    setRecipe((prevRecipe) => ({
+      ...prevRecipe,
+      image: file,
+      imageName: file ? file.name : '',
+    }));
   };
 
   return (
-    <Box sx={{ width: '100%', maxWidth: 600, margin: '0 auto', mt: 4 }}>
+    <Box sx={{ width: '100%', maxWidth: 600, margin: '0 auto', mt: 4, minWidth:'300px'}}>
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -61,23 +94,56 @@ function RecipeForm() {
               required
             />
           </Grid>
-          <Grid item xs={12}>
-            <Button variant="contained" component="label">
-              Upload Image
-              <input
-                type="file"
-                hidden
-                onChange={handleFileChange}
-                accept="image/*"
-              />
-            </Button>
-            {recipe.image && (
-              <img
-                src={recipe.image}
-                alt="Preview"
-                style={{ marginTop: '10px', maxWidth: '100%' }}
-              />
-            )}
+					<Grid item xs={12} container alignItems="center">
+						<Box
+							sx={{
+								p: 1,
+								mr: 2,
+								width: '50%',
+								minWidth: '100px',
+								border: '1px solid #ccc',
+								borderRadius: '4px',
+								minHeight: '40px',
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+							}}
+						>
+							{recipe.imageName ? (
+								<Typography>{recipe.imageName}</Typography>
+							) : (
+								<Typography variant="body2" color="textSecondary">
+									Please upload your recipe image
+								</Typography>
+							)}
+						</Box>
+						<input
+								accept="image/*"
+								style={{ display: 'none' }}
+								id="upload-file"
+								type="file"
+								onChange={handleFileChange}
+							/>
+						<label htmlFor="upload-file">
+							<Button 
+							variant="contained" 
+							component="span"
+							sx={{
+								fontSize: {
+									xs: '0.60rem', 
+									sm: '0.70rem',
+									md: '0.90rem',
+								},
+								padding: {
+									xs: '6px 12px',
+									sm: '8px 16px',
+									md: '10px 20px',
+								},
+							}}>
+								Upload Image
+							</Button>
+						</label>
+
           </Grid>
           <Grid item xs={12}>
             <TextField
@@ -120,7 +186,7 @@ function RecipeForm() {
               label="Time (minutes)"
               name="time"
               type="number"
-              value={recipe.time}
+              value={recipe.time != 0 ? recipe.time : ''}
               onChange={handleChange}
               variant="outlined"
               required
@@ -132,7 +198,7 @@ function RecipeForm() {
               label="Servings"
               name="servings"
               type="number"
-              value={recipe.servings}
+              value={recipe.servings != 0 ? recipe.servings : ''}
               onChange={handleChange}
               variant="outlined"
               required
@@ -170,7 +236,7 @@ function RecipeForm() {
               label="Calories"
               name="calories"
               type="number"
-              value={recipe.calories}
+              value={recipe.calories != 0 ? recipe.calories : ''}
               onChange={handleChange}
               variant="outlined"
               required
