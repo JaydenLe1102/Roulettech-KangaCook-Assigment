@@ -1,6 +1,4 @@
-
-import SearchBar from "../components/Recipes/searchBar";
-
+import SearchBar from "../components/Recipes/SearchBar";
 
 
 function Recipes() {
@@ -11,6 +9,7 @@ function Recipes() {
 		<>
 			<h1>Recipes</h1>
 			<SearchBar />
+
 		</>
 	)
 	
