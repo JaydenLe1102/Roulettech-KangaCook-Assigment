@@ -91,7 +91,7 @@ python3 backendDataScript.py
 
 
 ## Endpoints
-| HTTP Methods 1 | URL | Column 3 |
+| HTTP Methods | URL | Column 3 |
 |---|---|---|
 | GET |  http://localhost:8000/ | Welcome Endpoint, contain single welcome text |
 | GET | http://localhost:8000/api/recipes | Return all recipes in the database |
