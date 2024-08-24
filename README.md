@@ -26,7 +26,7 @@ Looking at README.md for inside backend and frontend folder for detailed instruc
 
 
 ## Additional Future Work
-- Efficient Image Storage: Store image data as BLOB types in the database for optimized performance and storage. Consider using more advance data structure like MySQL
+- Efficient Image Storage: Store image data as BLOB types in the database for optimized performance and storage. Consider using more advance data structure like MongoDB
 - Interactive Recipe Details: Implement a popup modal for viewing specific recipe details, providing a more user-friendly experience.
 - User Authentication and Account System: Integrate a login/signup system to allow users to save recipes to their accounts and claim ownership of their recipes creations.
 - Automated Keyword Generation: Automatically generate keywords from other recipe information provided by the user, enhancing searchability.
